@@ -1,0 +1,21 @@
+/* Flex */
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Media Queries */
+
+@mixin  media($value) {
+
+   @media(max-width: $value) {
+       @content
+   }
+
+}
+
+// 1100 440 365
